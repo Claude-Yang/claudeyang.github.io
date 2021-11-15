@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Videogame Survey</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+        font-size: 1.3em;
+        background-color: beige;
+
+        }
+        content{
+        width:90%;
+        margin:auto;
+        }
+
+        h1 {
+        text-align:center;
+        }
+
+        form {
+        margin-left:5%;
+        }
+        input {
+        margin-bottom:2%;
+        }
+        input#submit {
+        display:block;
+        background-color:#33ff99;
+        font-weight:bold;
+        padding: 20px;
+        font-size: 1.5em;
+        }
+
+        select option {
+        font-size: 1.75em;
+        width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Videogame survey</h1>
+    <form id="content" method="Post" action="https://idesstage2.bc.edu/class/results.php">
+        <label for="name">First Name: </label><br>
+        <input type="text" name="fname"><br>
+
+        <label for="name">Last Name: </label><br>
+        <input type="text" name="lname"><br>
+
+        <label for="email">Email: </label><br>
+        <input type="text" name="email" required><br>
+
+        <fieldset>
+            <legend>What is Your Favorite Type of Movie?</legend>
+            <input type="checkbox" name="Favor_M" value="Drama" id="drama">
+            <label for="Drama">Drama</label><br>
+            <input type="checkbox" name="Favor_M" value="Comedy" id="comedy">
+            <label for="Comedy">Comedy</label><br>
+            <input type="checkbox" name="Favor_M" value="Action" id="action">
+            <label for="Action">Action</label><br>
+            <input type="checkbox" name="Favor_M" value="Fantasy" id="fantasy">
+            <label for="Fantasy">Fantasy</label><br>
+            <input type="checkbox" name="Favor_M" value="Horror" id="horror">
+            <label for="pf">Horror</label><br>
+            <input type="checkbox" name="Favor_M" value="Romance" id="romance">
+            <label for="Romance">Romance</label><br>
+            <input type="checkbox" name="Favor_M" value="Western" id="western">
+            <label for="Western">Western</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>How often do you watch a movie?</legend>
+            <input type="radio" name="period" value="Every three days" id="Every three days">
+            <label for="Every three days">Every three days</label><br>
+            <input type="radio" name="period" value="Once a week" id="week">
+            <label for="week">Once a week</label><br>
+            <input type="radio" name="period" value="Once a month" id="month">
+            <label for="month">Once a month</label><br>
+            <input type="radio" name="period" value="Every few months" id="fewmonth">
+            <label for="fewmonth">Every few months</label><br>
+            <input type="radio" name="period" value="Once in a year" id="year">
+            <label for="year">Once in a year</label><br>
+            <input type="radio" name="period" value="Once in few years" id="fewyear">
+            <label for="fewyear">Once in few years</label><br>
+            <input type="radio" name="period" value="Never" id="never">
+            <label for="never">Never</label><br>
+        </fieldset>
+
+        <legend>Which part of the movie do you care more about most?</legend>
+        <select name="fav_platform">
+            <option value="PC">PC</option>
+            <option value="PS4/PS5">PS4/PS5</option>
+            <option value="Nintendo Switch">Nintendo Switch</option>
+            <option value="Xbox">Xbox</option>
+            <option value="Smartphone/Tablet">Smartphone/Tablet</option>
+            <option value="other">other</option>
+        </select>
+
+        <legend>Choose one of your favorate movies and explain why you like it:</legend>
+        <textarea name="role" rows="3" cols="60"></textarea><br>
+
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
