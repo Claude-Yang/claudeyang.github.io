@@ -43,7 +43,7 @@
         function setCookie() {
             let cname = "FirstName";
             const d = new Date();
-            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            d.setTime(d.getTime() + (1*24*60*60*1000));
             let expires = "expires=" + d.toUTCString();
             let cvalue = document.forms[0].fname.value;
             document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
@@ -71,7 +71,7 @@
             if (first_name != "") {
                 alert("Welcome again " + first_name);
             } else {
-                alert("submit the form to set your cookie")
+                alert("submit the form to set your cookie");
             }
         }
     </script>
